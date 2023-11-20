@@ -1,0 +1,42 @@
+@startuml
+'https://plantuml.com/class-diagram
+/'
+a comment
+'/
+scale 2
+
+title ArrayList<T>\n __array__
+caption Fig.1
+center header SHU
+
+legend left
+ArrayList
+LinkedList
+endlegend
+
+abstract class AbstractList
+abstract AbstractCollection
+interface List
+interface Collectionda
+
+List <|-- AbstractList
+Collection <|-- AbstractCollection
+
+Collection <|- List
+AbstractCollection <|- AbstractList
+AbstractList <|-- ArrayList
+
+class ArrayList {
+Object[] elementData
+size()
+}
+
+enum TimeUnit {
+DAYS
+HOURS
+MINUTES
+}
+
+right footer 1
+
+@enduml
